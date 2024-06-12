@@ -32,3 +32,49 @@ function counter() {
 }
 
 counter();
+
+function reviewCard() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
+    });
+}
+
+reviewCard();
+
+// scroll reveal
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 1000,
+    delay: 400,
+    reset: true,
+    opacity: 0,
+})
+
+sr.reveal(`.heading-1,.bg-img p,.bg-img .gap-1,.services .card,.Partnerships h2 `,{origin: 'top'})
+sr.reveal(`.heading-3 ,.c_fact,.about-right p ,.w-flow .card:nth-child(odd)`,{origin: 'right'})
+sr.reveal(`.swiper-slide `,{origin: 'bottom'})
+sr.reveal(`.heading-2,.connections .list-item,.team-img .heading-3,.team-img .t-des,.w-flow .card:nth-child(even),.p-grid .card ,.d-grid `,{origin: 'left'})
+sr.reveal(`.team-img img,.i-grid img`,{interval: 100,scale: 0.9,distance: "0",opacity: 0})
