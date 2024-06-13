@@ -64,17 +64,20 @@ reviewCard();
 
 // scroll reveal
 
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 1000,
-    delay: 400,
-    reset: true,
-    opacity: 0,
-})
+function animation(){
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 1000,
+        delay: 400,
+        reset: true,
+    })
+    
+    sr.reveal(`.heading-1,.bg-img p,.bg-img .gap-1,.services .card,.Partnerships h2 `,{origin: 'top'})
+    sr.reveal(`.heading-3 ,.c_fact,.about-right p ,.w-flow .card:nth-child(odd),iframe,.two,.three`,{origin: 'right'})
+    sr.reveal(`.swiper-slide `,{origin: 'bottom'})
+    sr.reveal(`.heading-2,.connections .list-item,.team-img .heading-3,.team-img .t-des,.w-flow .card:nth-child(even),.p-grid .card ,.d-grid, .needs-validation,.one`,{origin: 'left'})
+    sr.reveal(`.team-img img,.i-grid img`,{interval: 100,scale: 0.9,distance: "0",opacity: 0})    
+}
 
-sr.reveal(`.heading-1,.bg-img p,.bg-img .gap-1,.services .card,.Partnerships h2 `,{origin: 'top'})
-sr.reveal(`.heading-3 ,.c_fact,.about-right p ,.w-flow .card:nth-child(odd)`,{origin: 'right'})
-sr.reveal(`.swiper-slide `,{origin: 'bottom'})
-sr.reveal(`.heading-2,.connections .list-item,.team-img .heading-3,.team-img .t-des,.w-flow .card:nth-child(even),.p-grid .card ,.d-grid `,{origin: 'left'})
-sr.reveal(`.team-img img,.i-grid img`,{interval: 100,scale: 0.9,distance: "0",opacity: 0})
+animation();
