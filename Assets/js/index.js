@@ -77,7 +77,7 @@ function animation(){
     sr.reveal(`.heading-3 ,.c_fact,.about-right p ,.w-flow .card:nth-child(odd),iframe,.two,.three`,{origin: 'right'})
     sr.reveal(`.swiper-slide `,{origin: 'bottom'})
     sr.reveal(`.heading-2,.connections .list-item,.team-img .heading-3,.team-img .t-des,.w-flow .card:nth-child(even),.p-grid .card ,.d-grid, .needs-validation,.one`,{origin: 'left'})
-    sr.reveal(`.team-img img,.i-grid img`,{interval: 100,scale: 0.9,distance: "0",opacity: 0})    
+    sr.reveal(`.team-img img,.i-grid img ,.form-container`,{interval: 100,scale: 0.9,distance: "0",opacity: 0})    
 }
 
 animation();

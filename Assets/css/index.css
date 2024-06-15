@@ -611,6 +611,16 @@
     .d-grid{
         grid-template-columns: repeat(2,1fr);
     }
+    .f-list {
+        font-size: 0.6rem;
+    }
+    
+    .f-heading{
+        font-size: 1.2rem;
+    }.s-icon {
+        font-size: 0.6rem;
+    }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */
