@@ -507,10 +507,10 @@
         --bs-btn-border-radius: var(--bs-border-radius-sm);
     }
 
-    /* .connections .car-line {
+    .connections .car-line {
         left: 10px;
     }
-    */
+   
 
     .connections .car-line .car{
         height: 40px;
